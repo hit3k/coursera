@@ -1,8 +1,10 @@
+Description of variables in run_analysis.R file
+
 train - training data set
 test -  test data set
 merged - merged data set containing all data from train and test
-colNames - column names character array
-colFilter - logical filter for column names array
+colNames - column names character list
+colFilter - logical filter for column names list
 extractData -  data set that contains only the measurements on the mean and standard deviation for each measurement
 activityLabels - data frame with activity id and labels
 dataTable - extractData as data.table
