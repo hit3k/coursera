@@ -29,7 +29,7 @@ download.file(fileUrl, destfile="projectDataset.zip")
 ```
 unzip("projectDataset.zip")
 ```
-## 1. Merge the training and the test sets to create one data set
+## 1. Merge the training and the test data sets to create one data set
 ```
 train <- read.csv("UCI HAR Dataset/train/X_train.txt", sep="", header=FALSE)
 train[,ncol(train)+1] <- read.csv("UCI HAR Dataset/train/y_train.txt", sep="", header=FALSE)
