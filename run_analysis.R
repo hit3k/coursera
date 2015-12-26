@@ -40,7 +40,7 @@ colnames(merged) <- colNames
 # Create a filter for column names
 colFilter <- grep(".*mean\\(\\)|.*std\\(\\)", colNames)
 
-# Subset merged table based on the col_filter_list to keep only the desired columns
+# Subset merged table based on the colFilter list to keep only the desired columns
 extractData <- merged[,c(colFilter,ncol(merged),ncol(merged)-1)]
 
 # 3. Use descriptive activity names to name the activities in the data set
