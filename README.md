@@ -3,7 +3,7 @@
 First, environment is set for the data processing
 
 ## 0. Prepare environment
-rm(list=ls())
+```rm(list=ls())
 if(dir.exists("./project")) {
   unlink("./project", recursive=TRUE)
 }
@@ -12,14 +12,16 @@ dir.create("./project")
 setwd("./project")
 print("Warning: changing working directory.")
 getwd()
+```
 
 ### Load data.table package
-library("data.table")
+```library("data.table")
+```
 
 ### Download dataset
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+```fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl, destfile="projectDataset.zip")
-
+```
 ### Unzip dataset
 unzip("projectDataset.zip")
 
